@@ -1,0 +1,8 @@
+/lfs/h2/emc/pgctemp/shannon.shields/gefsv13_retro
+After you get a month or so of GEFS forecasts, please .tar them and send them to HPSS for save keeping and remove them from WCOSS2 for now. 
+You can do this by:
+On WCOSS2, if you type "hsi" it will connect you to HPSS. 
+Then type "group" to see your groups on HPSS. 
+If you have "ovp", you should have write access to /NCEPDEV/ovp/5year and can create a shannon.shields directory.
+You can put all GEFS files for a particular month (*) into a .tar file and push that .tar file to HPSS using the following command:
+htar -cvf /NCEPDEV/ovp/5year/shannon.shields/gefs_fcts_35days_202301.tar *
