@@ -1,0 +1,14 @@
+On WCOSS2:
+00 13 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/gefs_subseasonal_prep_step.sh
+
+30 14 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/cfs_subseasonal_prep_step.sh
+
+40 14 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/obs_subseasonal_prep_step.sh
+
+45 14 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/cfs_subseasonal_grid2grid_stats.sh
+
+00 15 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/gefs_subseasonal_grid2grid_stats.sh
+
+13 15 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/cfs_subseasonal_grid2obs_stats.sh
+
+35 15 * * * /lfs/h2/emc/vpppg/noscrub/shannon.shields/gefs_subseasonal_grid2obs_stats.sh
