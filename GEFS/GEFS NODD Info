@@ -1,0 +1,4 @@
+NODD URL: https://noaa-gefs-pds.s3.amazonaws.com/index.html
+
+Command to run:
+sh /lfs/h2/emc/vpppg/noscrub/shannon.shields/gefsv13_retro/nodd_scripts/nodd_wrapper.sh 20220701 20220702 1> /lfs/h2/emc/vpppg/noscrub/shannon.shields/cronjobs/logs/log_gefs_retro_data_20220701_20220701.out 2>&1 &
