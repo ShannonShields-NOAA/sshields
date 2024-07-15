@@ -1,0 +1,4 @@
+sftp Shannon.Shields@udtn-niagara.fairmont.rdhpcs.noaa.gov:/collab1/data_untrusted/Shannon.Shields
+
+If above returns "Corrupted MAC on input" error, try the following:
+sftp -o MACs=hmac-sha2-512 Shannon.Shields@udtn-niagara.fairmont.rdhpcs.noaa.gov:/collab1/data_untrusted/Shannon.Shields
