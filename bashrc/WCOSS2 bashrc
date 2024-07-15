@@ -14,6 +14,8 @@ alias plots='cd /lfs/h2/emc/ptmp/shannon.shields/evs/v2.0/plots/subseasonal'
 alias pgc='cd /lfs/h2/emc/pgctemp'
 alias wpc='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/pgc_data_scripts'
 alias pgcevs='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/feature_WPC_PGC_GEFS'
+alias pgcprep='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/wpc_pgc/evs/v2.0/prep/global_ens'
+alias pgcstats='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/wpc_pgc/evs/v2.0/stats/global_ens'
 
 module purge
 module load envvar/1.0
