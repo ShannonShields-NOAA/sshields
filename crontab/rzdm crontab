@@ -1,8 +1,6 @@
 On shannon.shields@vm-cprk-emcrzdm03:
 30 20 * * * /home/people/emc/www/htdocs/users/verification/global/subseasonal/para/scripts/untar_evs_plots.sh 1> /home/people/emc/www/htdocs/users/Shannon.Shields/cronjobs/untar_evs_para_plots.out
-changed to
-15 19 * * * /home/people/emc/www/htdocs/users/verification/global/subseasonal/prod/scripts/copy_evs_plots.sh 1> /home/people/emc/www/htdocs/users/Shannon.Shields/cronjobs/copy_evs_plots.out
 
-30 19 * * * /home/people/emc/www/htdocs/users/verification/global/subseasonal/prod/scripts/untar_evs_plots.sh 1> /home/people/emc/www/htdocs/users/Shannon.Shields/cronjobs/untar_evs_prod_plots.out
+15 19 * * * /home/people/emc/www/htdocs/users/verification/global/subseasonal/prod/scripts/untar_evs_plots.sh 1> /home/people/emc/www/htdocs/users/Shannon.Shields/cronjobs/untar_evs_prod_plots.out
 
 40 19 * * * /home/people/emc/www/htdocs/users/verification/global/subseasonal/dev/scripts/untar_evs_plots.sh 1> /home/people/emc/www/htdocs/users/Shannon.Shields/cronjobs/untar_evs_dev_plots.out
