@@ -1,0 +1,21 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias www='cd /home/people/emc/www/htdocs/users/Shannon.Shields'
+alias realtime='cd /home/people/emc/www/htdocs/users/meg/gfsv16/realtime'
+alias sshHera='ssh -L65516:localhost:65516 Shannon.Shields@hera-rsa.rdhpcs.noaa.gov'
+alias scpHera='scp -P 65516 Shannon.Shields@localhost:/scratch2/NCEPDEV/stmp3/Shannon.Shields/scripts/gefs/*.png .'
+alias src='source ~/.bashrc'
+alias gfsv16retros='cd /home/people/emc/www/htdocs/users/meg/gfsv16/retros'
+alias ACC='cd /home/people/emc/www/htdocs/users/Shannon.Shields/ACC'
+alias dev='cd /home/people/emc/www/htdocs/users/verification/global/subseasonal/dev'
+alias test='cd /home/people/emc/www/htdocs/users/verification/global/subseasonal/test'
+alias para='cd /home/people/emc/www/htdocs/users/verification/global/subseasonal/para'
+alias prod='cd /home/people/emc/www/htdocs/users/verification/global/subseasonal/prod'
+alias evscom='cd /common/data/model/com/evs/v1.0/subseasonal'
+alias evsdev='cd /home/people/emc/www/htdocs/users/verification/emc.vpppg/dev_tar_files/subseasonal'
