@@ -1,0 +1,117 @@
+05/20 14:07:09.723 metplus.5d4c3f97 INFO: Running METplus v6.0.0 as user shannon.shields(32327) with command: /apps/ops/para/libs/intel/19.1.3.304/metplus/6.0.0/ush/run_metplus.py -c /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/machine.conf -c /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/StatAnalysis_NWP_Index.conf
+05/20 14:07:09.737 metplus.5d4c3f97 INFO: Log file: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/logs/calc_nwp_index_StatAnalysis_fcstgfs_grid2grid_stats_for20250421_runon20250520140709.log
+05/20 14:07:09.737 metplus.5d4c3f97 INFO: METplus Base: /apps/ops/para/libs/intel/19.1.3.304/metplus/6.0.0
+05/20 14:07:09.738 metplus.5d4c3f97 INFO: Final Conf: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/confs/calc_nwp_index_StatAnalysis_fcstgfs_grid2grid_stats_for20250421_runon20250520140709.conf
+05/20 14:07:09.738 metplus.5d4c3f97 INFO: Config Input: /apps/ops/para/libs/intel/19.1.3.304/metplus/6.0.0/metplus/parm/metplus_config/defaults.conf
+05/20 14:07:09.738 metplus.5d4c3f97 INFO: Config Input: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/machine.conf
+05/20 14:07:09.738 metplus.5d4c3f97 INFO: Config Input: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/StatAnalysis_NWP_Index.conf
+05/20 14:07:09.753 metplus.5d4c3f97 (config_metplus.py:633) DEBUG: Setting [config] STAT_ANALYSIS_MANDATORY to default value (True)
+05/20 14:07:09.753 metplus.5d4c3f97 (config_metplus.py:633) DEBUG: Setting [config] STAT_ANALYSIS_SKIP_IF_OUTPUT_EXISTS to default value (False)
+05/20 14:07:09.754 metplus.5d4c3f97 (config_metplus.py:633) DEBUG: Setting [config] INPUT_MUST_EXIST to default value (True)
+05/20 14:07:09.754 metplus.5d4c3f97 (config_metplus.py:633) DEBUG: Setting [config] USER_SHELL to default value (bash)
+05/20 14:07:09.754 metplus.5d4c3f97 (config_metplus.py:633) DEBUG: Setting [config] DO_NOT_RUN_EXE to default value (False)
+05/20 14:07:09.754 metplus.5d4c3f97 (config_metplus.py:633) DEBUG: Setting [config] LOG_STAT_ANALYSIS_VERBOSITY to default value (3)
+05/20 14:07:09.762 metplus.5d4c3f97 (stat_analysis_wrapper.py:578) DEBUG: Items in these lists will be grouped together: MODEL_LIST, LINE_TYPE_LIST, DESC_LIST, VX_MASK_LIST, INTERP_MTHD_LIST, INTERP_PNTS_LIST, COV_THRESH_LIST, ALPHA_LIST, FCST_VALID_HOUR_LIST, FCST_INIT_HOUR_LIST, OBS_VALID_HOUR_LIST, OBS_INIT_HOUR_LIST, FCST_LEAD_LIST, OBS_LEAD_LIST, FCST_VAR_LIST, OBS_VAR_LIST, FCST_UNITS_LIST, OBS_UNITS_LIST, FCST_THRESH_LIST, OBS_THRESH_LIST, FCST_LEVEL_LIST, OBS_LEVEL_LIST
+05/20 14:07:09.762 metplus.5d4c3f97 (stat_analysis_wrapper.py:580) DEBUG: Items in these lists will be looped over: 
+05/20 14:07:09.763 metplus.5d4c3f97 INFO: Running wrapper: StatAnalysis
+05/20 14:07:09.763 metplus.5d4c3f97 (runtime_freq_wrapper.py:222) DEBUG: Running once for all files
+05/20 14:07:09.765 metplus.5d4c3f97 (stat_analysis_wrapper.py:1327) DEBUG: Model "cfs" not found in list of models to run. Skipping.
+05/20 14:07:09.765 metplus.5d4c3f97 (stat_analysis_wrapper.py:953) DEBUG: Building out_stat filename from template: stats/evs.stats.gfs.atmos.grid2grid.nwpindex.v{fcst_valid_end?fmt=%Y%m%d}.stat
+05/20 14:07:09.769 metplus.5d4c3f97 (command_builder.py:260) DEBUG: ENVIRONMENT FOR NEXT COMMAND: 
+05/20 14:07:09.769 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_ALPHA=
+05/20 14:07:09.769 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_COV_THRESH=
+05/20 14:07:09.769 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_DESC=
+05/20 14:07:09.770 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_INIT_BEG=
+05/20 14:07:09.770 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_INIT_END=
+05/20 14:07:09.770 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_INIT_HOUR=
+05/20 14:07:09.770 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_LEAD=
+05/20 14:07:09.770 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_LEVEL=fcst_lev = ["P500", "P500", "P500", "P500", "P500", "Z0", "Z0", "Z0", "Z0", "Z0", "P500", "P500", "P500", "P500", "P500", "Z0", "Z0", "Z0", "Z0", "Z0"];
+05/20 14:07:09.771 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_THRESH=
+05/20 14:07:09.771 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_UNITS=
+05/20 14:07:09.771 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_VALID_BEG=
+05/20 14:07:09.771 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_VALID_END=
+05/20 14:07:09.771 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_VALID_HOUR=fcst_valid_hour = ["000000", "060000", "120000", "180000"];
+05/20 14:07:09.771 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_FCST_VAR=fcst_var = ["HGT", "HGT", "HGT", "HGT", "HGT", "PRMSL", "PRMSL", "PRMSL", "PRMSL", "PRMSL", "HGT", "HGT", "HGT", "HGT", "HGT", "PRMSL", "PRMSL", "PRMSL", "PRMSL", "PRMSL"];
+05/20 14:07:09.772 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_HSS_EC_VALUE=
+05/20 14:07:09.772 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_INTERP_MTHD=
+05/20 14:07:09.772 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_INTERP_PNTS=
+05/20 14:07:09.772 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_JOBS=jobs = ["-job ss_index -out_stat /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/stats/evs.stats.gfs.atmos.grid2grid.nwpindex.v20250421.stat"];
+05/20 14:07:09.772 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_LINE_TYPE=line_type = ["SL1L2"];
+05/20 14:07:09.773 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_MET_CONFIG_OVERRIDES=model = ["gfs", "cfs"]; column = [ "RMSE" ]; weight = [6.0, 4.0, 2.0, 0.0, 0.0, 10.0, 8.0, 6.0, 4.0, 4.0, 3.0, 2.0, 1.0, 0.0, 0.0, 5.0, 4.0, 3.0, 2.0, 2.0]; ss_index_name = "NWP_INDEX"; ss_index_vld_thresh = 1.0; fcst_lead = ["240000", "480000", "720000", "960000", "1200000", "240000", "480000", "720000", "960000", "1200000", "240000", "480000", "720000", "960000", "1200000", "240000", "480000", "720000", "960000", "1200000"];
+05/20 14:07:09.773 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_MODEL=model = ["gfs"];
+05/20 14:07:09.773 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_INIT_BEG=
+05/20 14:07:09.773 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_INIT_END=
+05/20 14:07:09.773 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_INIT_HOUR=
+05/20 14:07:09.773 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_LEAD=
+05/20 14:07:09.774 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_LEVEL=
+05/20 14:07:09.774 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_THRESH=
+05/20 14:07:09.774 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_UNITS=
+05/20 14:07:09.774 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_VALID_BEG=
+05/20 14:07:09.774 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_VALID_END=
+05/20 14:07:09.774 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_VALID_HOUR=
+05/20 14:07:09.775 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBS_VAR=
+05/20 14:07:09.775 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_OBTYPE=obtype = ["gfs_anl"];
+05/20 14:07:09.775 metplus.5d4c3f97 (command_builder.py:260) DEBUG: METPLUS_VX_MASK=vx_mask = ["NHEM", "NHEM", "NHEM", "NHEM", "NHEM", "NHEM", "NHEM", "NHEM", "NHEM", "NHEM", "SHEM", "SHEM", "SHEM", "SHEM", "SHEM", "SHEM", "SHEM", "SHEM", "SHEM", "SHEM"];
+05/20 14:07:09.775 metplus.5d4c3f97 (command_builder.py:260) DEBUG: MET_TMP_DIR=/lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/tmp
+05/20 14:07:09.775 metplus.5d4c3f97 (command_builder.py:260) DEBUG: OMP_NUM_THREADS=1
+05/20 14:07:09.776 metplus.5d4c3f97 (command_builder.py:260) DEBUG: COPYABLE ENVIRONMENT FOR NEXT COMMAND: 
+05/20 14:07:09.776 metplus.5d4c3f97 (command_builder.py:260) DEBUG: export METPLUS_ALPHA=""; export METPLUS_COV_THRESH=""; export METPLUS_DESC=""; export METPLUS_FCST_INIT_BEG=""; export METPLUS_FCST_INIT_END=""; export METPLUS_FCST_INIT_HOUR=""; export METPLUS_FCST_LEAD=""; export METPLUS_FCST_LEVEL="fcst_lev = [\"P500\", \"P500\", \"P500\", \"P500\", \"P500\", \"Z0\", \"Z0\", \"Z0\", \"Z0\", \"Z0\", \"P500\", \"P500\", \"P500\", \"P500\", \"P500\", \"Z0\", \"Z0\", \"Z0\", \"Z0\", \"Z0\"];"; export METPLUS_FCST_THRESH=""; export METPLUS_FCST_UNITS=""; export METPLUS_FCST_VALID_BEG=""; export METPLUS_FCST_VALID_END=""; export METPLUS_FCST_VALID_HOUR="fcst_valid_hour = [\"000000\", \"060000\", \"120000\", \"180000\"];"; export METPLUS_FCST_VAR="fcst_var = [\"HGT\", \"HGT\", \"HGT\", \"HGT\", \"HGT\", \"PRMSL\", \"PRMSL\", \"PRMSL\", \"PRMSL\", \"PRMSL\", \"HGT\", \"HGT\", \"HGT\", \"HGT\", \"HGT\", \"PRMSL\", \"PRMSL\", \"PRMSL\", \"PRMSL\", \"PRMSL\"];"; export METPLUS_HSS_EC_VALUE=""; export METPLUS_INTERP_MTHD=""; export METPLUS_INTERP_PNTS=""; export METPLUS_JOBS="jobs = [\"-job ss_index -out_stat /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/stats/evs.stats.gfs.atmos.grid2grid.nwpindex.v20250421.stat\"];"; export METPLUS_LINE_TYPE="line_type = [\"SL1L2\"];"; export METPLUS_MET_CONFIG_OVERRIDES="model = [\"gfs\", \"cfs\"]; column = [ \"RMSE\" ]; weight = [6.0, 4.0, 2.0, 0.0, 0.0, 10.0, 8.0, 6.0, 4.0, 4.0, 3.0, 2.0, 1.0, 0.0, 0.0, 5.0, 4.0, 3.0, 2.0, 2.0]; ss_index_name = \"NWP_INDEX\"; ss_index_vld_thresh = 1.0; fcst_lead = [\"240000\", \"480000\", \"720000\", \"960000\", \"1200000\", \"240000\", \"480000\", \"720000\", \"960000\", \"1200000\", \"240000\", \"480000\", \"720000\", \"960000\", \"1200000\", \"240000\", \"480000\", \"720000\", \"960000\", \"1200000\"];"; export METPLUS_MODEL="model = [\"gfs\"];"; export METPLUS_OBS_INIT_BEG=""; export METPLUS_OBS_INIT_END=""; export METPLUS_OBS_INIT_HOUR=""; export METPLUS_OBS_LEAD=""; export METPLUS_OBS_LEVEL=""; export METPLUS_OBS_THRESH=""; export METPLUS_OBS_UNITS=""; export METPLUS_OBS_VALID_BEG=""; export METPLUS_OBS_VALID_END=""; export METPLUS_OBS_VALID_HOUR=""; export METPLUS_OBS_VAR=""; export METPLUS_OBTYPE="obtype = [\"gfs_anl\"];"; export METPLUS_VX_MASK="vx_mask = [\"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"NHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\", \"SHEM\"];"; export MET_TMP_DIR="/lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/tmp"; export OMP_NUM_THREADS="1"; 
+05/20 14:07:09.776 metplus.5d4c3f97 (stat_analysis_wrapper.py:353) DEBUG: Setting -lookin dir to /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/gfs.20250421/evs.stats.gfs.atmos.grid2grid.v20250421.stat /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/cfs.20250421/evs.stats.cfs.atmos.grid2grid.v20250421.stat
+05/20 14:07:09.776 metplus.5d4c3f97 INFO: COMMAND: /apps/ops/para/libs/intel/19.1.3.304/met/12.0.1/bin/stat_analysis -v 3 -lookin /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/gfs.20250421/evs.stats.gfs.atmos.grid2grid.v20250421.stat /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/cfs.20250421/evs.stats.cfs.atmos.grid2grid.v20250421.stat -config /apps/ops/para/libs/intel/19.1.3.304/metplus/6.0.0/metplus/parm/met_config/STATAnalysisConfig_wrapped
+05/20 14:07:09.779 metplus.5d4c3f97 (run_util.py:66) DEBUG: Logging command output to: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/logs/calc_nwp_index_StatAnalysis_fcstgfs_grid2grid_stats_for20250421_runon20250520140709.log
+OUTPUT:
+DEBUG 1: Start stat_analysis by shannon.shields(32327) at 2025-05-20 14:07:11Z  cmd: /apps/ops/para/libs/intel/19.1.3.304/met/12.0.1/bin/stat_analysis -v 3 -lookin /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/gfs.20250421/evs.stats.gfs.atmos.grid2grid.v20250421.stat /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/cfs.20250421/evs.stats.cfs.atmos.grid2grid.v20250421.stat -config /apps/ops/para/libs/intel/19.1.3.304/metplus/6.0.0/metplus/parm/met_config/STATAnalysisConfig_wrapped 
+DEBUG 1: Default Config File: /apps/ops/para/libs/intel/19.1.3.304/met/12.0.1/share/met/config/STATAnalysisConfig_default
+DEBUG 1: User Config File: /apps/ops/para/libs/intel/19.1.3.304/metplus/6.0.0/metplus/parm/met_config/STATAnalysisConfig_wrapped
+DEBUG 2: Processing 2 STAT files.
+DEBUG 3: Processing STAT file "/lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/gfs.20250421/evs.stats.gfs.atmos.grid2grid.v20250421.stat" ... 1 of 2
+DEBUG 3: Processing STAT file "/lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0/stats/global_det/cfs.20250421/evs.stats.cfs.atmos.grid2grid.v20250421.stat" ... 2 of 2
+DEBUG 2: STAT Lines read     = 413434
+DEBUG 2: STAT Lines retained = 160
+DEBUG 2: 
+DEBUG 2: Processing Job 1: -job ss_index -model gfs -model cfs -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_valid_hour 000000 -fcst_valid_hour 060000 -fcst_valid_hour 120000 -fcst_valid_hour 180000 -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -obtype gfs_anl -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -line_type SL1L2 -column RMSE -weight 6.00000 -weight 4.00000 -weight 2.00000 -weight 0.00000 -weight 0.00000 -weight 10.00000 -weight 8.00000 -weight 6.00000 -weight 4.00000 -weight 4.00000 -weight 3.00000 -weight 2.00000 -weight 1.00000 -weight 0.00000 -weight 0.00000 -weight 5.00000 -weight 4.00000 -weight 3.00000 -weight 2.00000 -weight 2.00000 -out_stat /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/stats/evs.stats.gfs.atmos.grid2grid.nwpindex.v20250421.stat -ss_index_name NWP_INDEX -ss_index_vld_thresh 1.00000 
+DEBUG 1: Creating STAT output file "/lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/stats/evs.stats.gfs.atmos.grid2grid.nwpindex.v20250421.stat"
+DEBUG 3: Computing NWP_INDEX for forecast model (gfs) versus reference model (cfs).
+DEBUG 3: [Case 1] Added new case for key "(nul)".
+DEBUG 2: Computing output for 1 case(s).
+DEBUG 2: For case "", found 2 unique MODEL values: gfs,cfs
+DEBUG 2: For case "(nul)", found 5 unique FCST_LEAD values: 1200000,240000,480000,720000,960000
+DEBUG 2: For case "", found 2 unique FCST_VAR values: HGT,PRMSL
+DEBUG 2: For case "", found 2 unique FCST_UNITS values: gpm,hPa
+DEBUG 2: For case "", found 2 unique FCST_LEV values: P500,Z0
+DEBUG 2: For case "", found 2 unique OBS_VAR values: HGT,PRMSL
+DEBUG 2: For case "", found 2 unique OBS_UNITS values: gpm,hPa
+DEBUG 2: For case "", found 2 unique OBS_LEV values: P500,Z0
+DEBUG 2: For case "", found 2 unique VX_MASK values: NHEM,SHEM
+DEBUG 3: Computing NWP_INDEX for 20 initialization time(s): 20250416_000000,20250416_060000,20250416_120000,20250416_180000,20250420_000000,20250420_060000,20250420_120000,20250420_180000,20250419_000000,20250419_060000,20250419_120000,20250419_180000,20250418_000000,20250418_060000,20250418_120000,20250418_180000,20250417_000000,20250417_060000,20250417_120000,20250417_180000
+DEBUG 3: NWP_INDEX Term 1: HGT/P500 at 240000 lead, 4 fcst SL1L2->RMSE = 5.52094, 4 ref SL1L2->RMSE = 10.63395, skill = 0.73045, weight = 6
+DEBUG 3: NWP_INDEX Term 2: HGT/P500 at 480000 lead, 4 fcst SL1L2->RMSE = 12.11825, 4 ref SL1L2->RMSE = 18.72377, skill = 0.58112, weight = 4
+DEBUG 3: NWP_INDEX Term 3: HGT/P500 at 720000 lead, 4 fcst SL1L2->RMSE = 18.82896, 4 ref SL1L2->RMSE = 25.41412, skill = 0.45109, weight = 2
+DEBUG 3: NWP_INDEX Term 4: HGT/P500 at 960000 lead, 4 fcst SL1L2->RMSE = 27.14219, 4 ref SL1L2->RMSE = 40.34953, skill = 0.54751, weight = 0
+DEBUG 3: NWP_INDEX Term 5: HGT/P500 at 1200000 lead, 4 fcst SL1L2->RMSE = 45.48254, 4 ref SL1L2->RMSE = 51.31502, skill = 0.21440, weight = 0
+DEBUG 3: NWP_INDEX Term 6: PRMSL/Z0 at 240000 lead, 4 fcst SL1L2->RMSE = 0.74481, 4 ref SL1L2->RMSE = 1.56663, skill = 0.77398, weight = 10
+DEBUG 3: NWP_INDEX Term 7: PRMSL/Z0 at 480000 lead, 4 fcst SL1L2->RMSE = 1.28204, 4 ref SL1L2->RMSE = 2.11859, skill = 0.63381, weight = 8
+DEBUG 3: NWP_INDEX Term 8: PRMSL/Z0 at 720000 lead, 4 fcst SL1L2->RMSE = 1.80583, 4 ref SL1L2->RMSE = 2.57533, skill = 0.50831, weight = 6
+DEBUG 3: NWP_INDEX Term 9: PRMSL/Z0 at 960000 lead, 4 fcst SL1L2->RMSE = 2.51498, 4 ref SL1L2->RMSE = 3.65539, skill = 0.52663, weight = 4
+DEBUG 3: NWP_INDEX Term 10: PRMSL/Z0 at 1200000 lead, 4 fcst SL1L2->RMSE = 3.89712, 4 ref SL1L2->RMSE = 5.09097, skill = 0.41401, weight = 4
+DEBUG 3: NWP_INDEX Term 11: HGT/P500 at 240000 lead, 4 fcst SL1L2->RMSE = 7.32026, 4 ref SL1L2->RMSE = 12.92277, skill = 0.67912, weight = 3
+DEBUG 3: NWP_INDEX Term 12: HGT/P500 at 480000 lead, 4 fcst SL1L2->RMSE = 13.28680, 4 ref SL1L2->RMSE = 24.79846, skill = 0.71293, weight = 2
+DEBUG 3: NWP_INDEX Term 13: HGT/P500 at 720000 lead, 4 fcst SL1L2->RMSE = 23.32045, 4 ref SL1L2->RMSE = 36.60696, skill = 0.59417, weight = 1
+DEBUG 3: NWP_INDEX Term 14: HGT/P500 at 960000 lead, 4 fcst SL1L2->RMSE = 33.56162, 4 ref SL1L2->RMSE = 50.28326, skill = 0.55451, weight = 0
+DEBUG 3: NWP_INDEX Term 15: HGT/P500 at 1200000 lead, 4 fcst SL1L2->RMSE = 52.65474, 4 ref SL1L2->RMSE = 61.93687, skill = 0.27727, weight = 0
+DEBUG 3: NWP_INDEX Term 16: PRMSL/Z0 at 240000 lead, 4 fcst SL1L2->RMSE = 1.24711, 4 ref SL1L2->RMSE = 2.13949, skill = 0.66022, weight = 5
+DEBUG 3: NWP_INDEX Term 17: PRMSL/Z0 at 480000 lead, 4 fcst SL1L2->RMSE = 2.12722, 4 ref SL1L2->RMSE = 3.40354, skill = 0.60937, weight = 4
+DEBUG 3: NWP_INDEX Term 18: PRMSL/Z0 at 720000 lead, 4 fcst SL1L2->RMSE = 3.16232, 4 ref SL1L2->RMSE = 4.35555, skill = 0.47286, weight = 3
+DEBUG 3: NWP_INDEX Term 19: PRMSL/Z0 at 960000 lead, 4 fcst SL1L2->RMSE = 4.12404, 4 ref SL1L2->RMSE = 5.57154, skill = 0.45211, weight = 2
+DEBUG 3: NWP_INDEX Term 20: PRMSL/Z0 at 1200000 lead, 4 fcst SL1L2->RMSE = 6.03161, 4 ref SL1L2->RMSE = 6.67182, skill = 0.18271, weight = 2
+DEBUG 3: NWP_INDEX Weighted Average = 0.601761
+DEBUG 3: NWP_INDEX Skill Score Value = 1.58463
+JOB_LIST:      -job ss_index -model gfs -model cfs -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_lead 240000 -fcst_lead 480000 -fcst_lead 720000 -fcst_lead 960000 -fcst_lead 1200000 -fcst_valid_hour 000000 -fcst_valid_hour 060000 -fcst_valid_hour 120000 -fcst_valid_hour 180000 -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var HGT -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_var PRMSL -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev P500 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -fcst_lev Z0 -obtype gfs_anl -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask NHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -vx_mask SHEM -line_type SL1L2 -column RMSE -weight 6.00000 -weight 4.00000 -weight 2.00000 -weight 0.00000 -weight 0.00000 -weight 10.00000 -weight 8.00000 -weight 6.00000 -weight 4.00000 -weight 4.00000 -weight 3.00000 -weight 2.00000 -weight 1.00000 -weight 0.00000 -weight 0.00000 -weight 5.00000 -weight 4.00000 -weight 3.00000 -weight 2.00000 -weight 2.00000 -out_stat /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/stats/evs.stats.gfs.atmos.grid2grid.nwpindex.v20250421.stat -ss_index_name NWP_INDEX -ss_index_vld_thresh 1.00000 
+DEBUG 2: Job 1 used 160 out of 160 STAT lines.
+DEBUG 1: Finish stat_analysis by shannon.shields(32327) at 2025-05-20 14:07:31Z
+05/20 14:07:32.045 metplus.5d4c3f97 INFO: Finished running /apps/ops/para/libs/intel/19.1.3.304/met/12.0.1/bin/stat_analysis - took 0:00:22.234946
+05/20 14:07:32.052 metplus.5d4c3f97 (config_util.py:173) DEBUG: Writing all commands and environment to /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/logs/.all_commands.20250520140709
+05/20 14:07:32.057 metplus.5d4c3f97 INFO: Overwrite final conf here: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/confs/calc_nwp_index_StatAnalysis_fcstgfs_grid2grid_stats_for20250421_runon20250520140709.conf
+05/20 14:07:32.059 metplus.5d4c3f97 INFO: METplus took 0:00:23.059919 to run.
+05/20 14:07:32.060 metplus.5d4c3f97 INFO: Check the log file for more information: /lfs/h2/emc/vpppg/noscrub/shannon.shields/NWP_index/logs/calc_nwp_index_StatAnalysis_fcstgfs_grid2grid_stats_for20250421_runon20250520140709.log
+05/20 14:07:32.060 metplus.5d4c3f97 INFO: METplus has successfully finished running as user shannon.shields(32327).
