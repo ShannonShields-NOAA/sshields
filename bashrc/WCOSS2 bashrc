@@ -2,7 +2,7 @@
 alias src='source ~/.bashrc'
 alias ptmp='cd /lfs/h2/emc/ptmp/shannon.shields'
 alias stmp='cd /lfs/h2/emc/stmp/shannon.shields'
-alias evs='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/feature_subseasonal_mpmd_fix/EVS'
+alias evs='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/feature_global_det_NWP_Index/EVS'
 alias opsevs='cd /lfs/h1/ops/prod/com/evs/v1.0'
 alias paraevs='cd /lfs/h2/emc/vpppg/noscrub/emc.vpppg/evs/v2.0'
 alias paraout='cd /lfs/h2/emc/ptmp/emc.vpppg/output'
@@ -10,8 +10,9 @@ alias paraplots='cd /lfs/h2/emc/ptmp/emc.vpppg/evs/v2.0/plots/subseasonal'
 alias output='cd /lfs/h2/emc/stmp/shannon.shields/evs_test/prod/tmp'
 alias prep='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/EVS_Data/evs/2.0/prep/subseasonal'
 alias stats='cd /lfs/h2/emc/vpppg/noscrub/shannon.shields/evs_subseasonal_test/dev/com/evs/2.0/stats/subseasonal'
-alias plots='cd /lfs/h2/emc/ptmp/shannon.shields/evs/v2.0/plots/subseasonal'
+alias plots='cd /lfs/h2/emc/ptmp/shannon.shields/evs/v2.0/plots'
 alias pgc='cd /lfs/h2/emc/pgctemp'
+alias lnfix='ln -sf /lfs/h2/emc/vpppg/noscrub/emc.vpppg/verification/EVS_fix fix'
 
 module purge
 module load envvar/1.0
