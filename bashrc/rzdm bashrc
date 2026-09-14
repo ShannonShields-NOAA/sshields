@@ -19,3 +19,4 @@ alias para='cd /home/people/emc/www/htdocs/users/verification/global/subseasonal
 alias prod='cd /home/people/emc/www/htdocs/users/verification/global/subseasonal/prod'
 alias evscom='cd /common/data/model/com/evs/v1.0/subseasonal'
 alias evsdev='cd /home/people/emc/www/htdocs/users/verification/emc.vpppg/dev_tar_files/subseasonal'
+alias nwpindex='cd /home/people/emc/www/htdocs/users/verification_restricted/global/nwp_index'
